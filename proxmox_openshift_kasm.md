@@ -1,9 +1,9 @@
 # Modernizing Our Virtualization Infrastructure
-## Strategic Evolution for 2024
+## Strategizinig our Infrastructure Deployements and Administration
 
 ### Automated Infrastructure and Configuration Management
-[Date]
-[Presenter]
+[10/29/2024]
+[Kyle Kulmatycski]
 
 ---
 
@@ -11,7 +11,7 @@
 
 ### Current Environment
 * Test: VMware ESXi
-* Production: RHEVM (EOL Approaching)
+* Production: RHEVM (EOL -- Extended life support until 2026)
 * Remote Access: NoMachine NX
 * Manual Provisioning
 * Limited Configuration Management
@@ -19,8 +19,8 @@
 ### Driving Change
 * RHEVM end-of-life
 * Need for automated provisioning
-* Remote access modernization
-* Configuration management at scale
+* Remote access modernization (video encoding / container isolation per user)
+* Configuration management automation (try to centralize)
 
 ---
 
@@ -86,7 +86,7 @@
 | Container Support | Limited | Native |
 | Remote Access | Client-based | Browser-based |
 | Automation | Manual | API-driven |
-| Deployment Time | Days | Hours |
+| Deployment Time | Minutes | Hour(s) |
 | Configuration | Manual | Automated |
 
 ### Benefits
@@ -100,16 +100,16 @@
 
 ## Implementation Approach
 
-### Phase 1 (10 weeks)
-* Proxmox deployment
+### Phase 1 (4-6 months)
+* Proxmox deployment 
 * Ansible framework setup
 * Initial automation development
 * Test environment migration
 
-### Phase 2 (14 weeks)
-* OpenShift implementation
+### Phase 2 (3-4 Months)
+* OpenShift implementation (not including migrating existing services)
 * RHEVM workload migration
-* Automation integration
+* Automation integration (migrate as much to ansible as possible, ie puppet and custom scripts replaced by ansible playbooks)
 * Production migration start
 
 ### Phase 3 (8 weeks)
@@ -131,42 +131,18 @@
 * Change control process
 
 ### Next Steps
-1. Approve Proxmox pilot
-2. Begin Ansible framework setup
-3. Schedule OpenShift planning
-4. Develop initial playbooks
+1. Create roadmap for Proxmox pilot
+2. Begin Ansible framework setup - I think Zaiwen has been experimenting 
+3. Schedule OpenShift planning - Already in the works by CAD team
+4. Develop initial playbooks - Kyle has handful of scripts he'll be publishing for EIC 
 5. Create automation test environment
 
----
-
-## Questions?
-
-### Contact Information
-[Your contact details]
 
 ### Additional Resources
-* Project documentation
-* Technical specifications
-* Training materials
+* [Proxmox](https://proxmox.com/en/)
+* [OpenShift Documentation Repo](https://docs.openshift.com/)
+* [Kasm Workspaces](https://kasmweb.com/)
+* [Local Kasm Server  - TBD](localhost)
+  
 
----
 
-## Notes
-
-### Speaking Notes
-* Slide 1: Brief introduction of modernization initiative
-* Slide 2: Emphasize RHEVM EOL and automation needs
-* Slide 3: Focus on integrated architecture and key benefits
-* Slide 4: Highlight how Ansible ties everything together
-* Slide 5: Compare current vs. future state
-* Slide 6: Show manageable, realistic timeline
-* Slide 7: Demonstrate risk awareness and clear path forward
-* Slide 8: Open discussion
-
-### Design Notes
-* Use clean, minimal design
-* Include architecture diagram
-* Show automation workflow
-* Use company color scheme
-* Include progress bars for timeline
-* Add comparison tables where appropriate
