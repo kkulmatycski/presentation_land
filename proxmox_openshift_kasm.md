@@ -36,6 +36,7 @@
 
 #### 2. Container Platform
 * OpenShift replacing RHEVM
+  - Gives Developers/OPs a CI/CD environemnt with commercial support.
 * Modern orchestration
 * Natural RHEL progression
 * Future-proof architecture
@@ -134,9 +135,11 @@
 1. Create roadmap for Proxmox pilot
 2. Begin Ansible framework setup - I think Zaiwen has been experimenting 
 3. Schedule OpenShift planning - Already in the works by CAD team
-4. Develop initial playbooks - Kyle has handful of scripts he'll be publishing for EIC 
-5. Create automation test environment
-
+4. Develop initial playbooks - Kyle has handful of scripts he'll be publishing for EIC, share with CAD.
+5. Create automation test environment - Need real machines to experiment with. [Would be nice to explore CEPH Proxmox Cluster](https://pve.proxmox.com/wiki/Deploy_Hyper-Converged_Ceph_Cluster)
+  - Proxmox + Ceph across 3 nodes
+  - NFS User Directory + Data (explore server architecture vSAN?)
+  - Seperate nodes for VDI but leverage Proxmox in hosting VDI Containers
 
 ### Additional Resources
 * [Proxmox](https://proxmox.com/en/)
