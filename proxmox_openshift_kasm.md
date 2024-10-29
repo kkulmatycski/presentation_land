@@ -87,7 +87,7 @@
 | Remote Access | Client-based | Browser-based |
 | Automation | Manual | API-driven |
 | Deployment Time | Minutes | Hour(s) |
-| Configuration | Manual | Automated |
+| Configuration | Automation through scripts | Automation through API |
 
 ### Benefits
 * Consistent deployments
