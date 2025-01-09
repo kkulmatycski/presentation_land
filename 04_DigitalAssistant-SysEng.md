@@ -44,6 +44,7 @@ ML technologies can provide deeper insights through:
 ## Next Steps
 
 1. Review current requirements management tools and processes
-2. Identify highest-priority areas for AI/ML integration
-3. Develop proof-of-concept implementations for selected applications
-4. Evaluate potential impact and resource requirements
+   -- What method of Systems Engineering is EIC employing 
+3. Identify highest-priority areas for AI/ML integration
+4. Develop proof-of-concept implementations for selected applications
+5. Evaluate potential impact and resource requirements
